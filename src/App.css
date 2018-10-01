@@ -1,0 +1,38 @@
+
+.App {
+  text-align: center;
+  background-image: url("https://i.pinimg.com/originals/2c/d8/17/2cd81711a1653cf1a2c91527d90fc2d5.jpg");
+}
+
+
+.App-header {
+  background-color:#E0E4CC;
+  height: 150px;
+  padding: 5px;
+  color:#FA6900;
+}
+
+.App-title {
+  font-size: 3em;
+  font-family: 'Pacifico', cursive;
+}
+
+.App-intro {
+  font-size: 25px;
+  padding: 20px;
+  color:#E0E4CC;
+  font-family: 'Josefin Slab', serif;
+
+}
+
+.footer {
+  margin-top: 20px;
+  background-color:#E0E4CC;
+  color: #FA6900;
+  font-family: 'Josefin Slab', serif;
+
+}
+.score {
+  color:#E0E4CC;
+  font-family: 'Josefin Slab', serif;
+}
