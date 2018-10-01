@@ -15,10 +15,10 @@ class App extends Component {
     shakeit: "false"
   };
   clickPicture = id => {
-    // Arrange the pictures in a random manner
+    // Arrange the pictures in a random order
     const shuffledArray = this.shuffleArray(friends);
     this.setState({friends: shuffledArray});
-    // if clicked an image already clicked set this.state.score = 0; empty clickeadArray, end of if block
+    // if clicked an image already clicked set this.state.score = 0; empty clickeadArray
     if (this.state.clickedArray.includes(id)) {
       this.setState({ score: 0, clickedArray: [], message: "Incorrect...maybe next time! Click an image to start again!", shakeit: "true"});
     }
@@ -47,10 +47,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Welcome to My React Clicky Game!!</h1>
+          <h1 className="App-title">Welcome to My React Dog Click Game!!</h1>
         </header>
         <h3 className="App-intro">
-          <strong>Click on a different image to earn points. If you click the same one twice, you loose</strong> 
+          <strong>Click on a different image to earn points. If you click the same image twice in a row, you loose</strong> 
           <p className = "score"><strong>Score: {this.state.score} | Top Score: {this.state.topScore}</strong></p>
           <p className="message"><strong>{this.state.message}</strong></p>
         </h3>
